@@ -24,7 +24,7 @@ pixels = neopixel.NeoPixel(
 
 # secrets.py has SSID/password and adafruit.io
 ADAFRUIT_IO_USERNAME = "mminton"
-ADAFRUIT_IO_KEY = "aio_qdPH50d4hiRIXQOorYv89Q5be9l5"
+ADAFRUIT_IO_KEY = "aio_TXHx49bi29YCx1iZLchMdbsdkIC8"
 
 NUMBERPAD = "lulus.numberpad"
 
@@ -103,6 +103,9 @@ def main():
     # the first time is always random (is that a contradiction?)
     r = 0
     # end wave animation vars
+
+    # for animation 5
+    cometSimple = Comet(pixels, random.random() * 0.1, color=PURPLE, tail_length=10, bounce=False)
     
     while True:
         if time.time() % 30 == 0:
@@ -161,6 +164,8 @@ def main():
             cometRed1.animate()
             cometRed2.animate()
             cometYellow.animate()
+        elif animation_number == 5:
+            cometSimple.animate()
         else:
             pixels.fill(GREEN)
             pixels.show()

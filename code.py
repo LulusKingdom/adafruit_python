@@ -24,7 +24,7 @@ pixels = neopixel.NeoPixel(
 
 # secrets.py has SSID/password and adafruit.io
 ADAFRUIT_IO_USERNAME = "mminton"
-ADAFRUIT_IO_KEY = "aio_TXHx49bi29YCx1iZLchMdbsdkIC8"
+ADAFRUIT_IO_KEY = "aio_yASJ25f9qRGnmrTxEyLhtLVvEvkR"
 
 NUMBERPAD = "lulus.numberpad"
 
@@ -65,7 +65,7 @@ def step(u, um, f, n, dx, dt, c):
     return up
 
 def main():
-    animation_number = 1
+    animation_number = 3
     rainbow_comet = RainbowComet(pixels, speed=0.1, tail_length=7, bounce=True)
     
     # for animation 3 - random lightning

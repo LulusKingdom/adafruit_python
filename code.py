@@ -80,7 +80,7 @@ def main():
     comet9 = Comet(pixels, speed=random.random() * 0.2, color=pickRandomColor(), tail_length=int(random.random() * 30), bounce=False)
     comet10 = Comet(pixels, speed=random.random() * 0.2, color=pickRandomColor(), tail_length=int(random.random() * 30), bounce=False)
 
-    # for sunset animation
+    # for animation 4 sunset animation
     sparkleOrange = Sparkle(pixels, speed=0.15, color=ORANGE, num_sparkles=150)
     sparkleYellow = Sparkle(pixels, speed=0.15, color=YELLOW_ORANGE, num_sparkles=150)
     cometRed1 = Comet(pixels, speed=0.2, color=RED2, tail_length=10, bounce=True)
